@@ -43,7 +43,7 @@ The image contains 4 endmembers; Asphalt Road, Roof, Grass, Tree. These endmembe
 
 # Architecture
 
-
+![Diagram](assets/architecture.png)
 
 
 Presentation - https://docs.google.com/presentation/d/11CiYy9N1HPy-sw6BZI3bKO7vEWBu1FAo/edit?slide=id.p12#slide=id.p12
