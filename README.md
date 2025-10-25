@@ -10,7 +10,9 @@ Hyperspectral Unmixing is a process that decomposes mixed pixels into pure pixel
 
 **Mixed Pixels** are a result of the resolution of sensors. Many pixels capture light from multiple materials, therefore one pixel 
 can constitute multiple materials
+
 **Endmembers** are unique spectral signatures of pure materials present in the image. 
+
 **Abundances** are the amount of endmembers present in the image.
 
 The mixing model used in this paper was the **Linear Mixing Model**, which can be represented as 
@@ -18,8 +20,11 @@ The mixing model used in this paper was the **Linear Mixing Model**, which can b
 X = EA + N
 
 X - Hyperspectral Image
+
 E - Endmember Matrix
+
 A - Abundance Matrix 
+
 N - Noise Matrix
 
 where noise can be defined as variations in the true spectral values in the image.
