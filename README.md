@@ -1,10 +1,11 @@
 # SSABNUrban
 This project implements the Spatial-Spectral Attention Bilateral Network (SSABN) for hyperspectral unmixing, based on the paper: 
 
-Zhiru Yang et al., "Spatial-Spectral Attention Bilateral Network for Hyperspectral Unmixing," IEEE GRSL, 2023.
+*Zhiru Yang et al., "Spatial-Spectral Attention Bilateral Network for Hyperspectral Unmixing," IEEE GRSL, 2023.*
 
 Environment Used - Google Colab
 
+Presentation - https://docs.google.com/presentation/d/11CiYy9N1HPy-sw6BZI3bKO7vEWBu1FAo/edit?slide=id.p12#slide=id.p12
 # Prerequisites
 ```
 python >= 3.8
