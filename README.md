@@ -32,7 +32,9 @@ where noise can be defined as variations in the true spectral values in the imag
 **Blind Hyperspectral Unmixing** - You do not need the endmembers, you directly estimate them from the image.
 The abundances and endmembers of each pixel are estimated from the image.
 
-# Results
+# Architecture
+
+
 
 
 Presentation - https://docs.google.com/presentation/d/11CiYy9N1HPy-sw6BZI3bKO7vEWBu1FAo/edit?slide=id.p12#slide=id.p12
