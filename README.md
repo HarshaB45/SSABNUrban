@@ -107,6 +107,11 @@ pip install torch==2.5.1 torchvision==0.20.1 numpy==1.24.0 scipy==1.14.1
 matplotlib==3.6.3
 
 # How to Run
-Upload the datasets to the designated folder and run SSABNUrban.ipynb
+# In order to run this project on colab:
+
+- **Step 1:** Open an empty colab file
+- ""Step 2:** Upload the datasets UrbanR162.mat and groundTruth_
+
+
 
 
