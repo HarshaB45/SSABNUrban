@@ -110,7 +110,9 @@ matplotlib==3.6.3
 # In order to run this project on colab:
 
 - **Step 1:** Open an empty colab file
-- ""Step 2:** Upload the datasets UrbanR162.mat and groundTruth_
+- **Step 2:** Upload the datasets UrbanR162.mat and groundTruth_4_end.zip one of two ways:
+  - ddd
+  - ddd
 
 
 
