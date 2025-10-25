@@ -37,6 +37,8 @@ The abundances and endmembers of each pixel are estimated from the image.
 
 ![Diagram](assets/urbanimage.png)
 
+Urban dataset has a hyperspectral image with dimensions 307 × 307 pixels and 210 spectral bands ranging from 400 nm to 2500 nm, after removing noisy and water absorption bands. The scene contains various urban materials such as asphalt, grass, tree, roof, and dirt, each representing distinct endmembers. These endmembers are used in spectral unmixing to identify and estimate the proportion of each material within every pixel, since most pixels contain mixtures of multiple materials due to the high spatial complexity of urban areas.
+
 # Architecture
 
 
