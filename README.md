@@ -30,7 +30,6 @@ N - Noise Matrix
 where noise can be defined as variations in the true spectral values in the image.
 
 **Blind Hyperspectral Unmixing** - You do not need the endmembers, you directly estimate them from the image.
-
 The abundances and endmembers of each pixel are estimated from the image.
 
 # Results
