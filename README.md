@@ -111,8 +111,11 @@ matplotlib==3.6.3
 
 - **Step 1:** Open an empty colab file
 - **Step 2:** Upload the datasets UrbanR162.mat and groundTruth_4_end.zip one of two ways:
-  - ddd
-  - ddd
+  - Run the first cell, and upload the files using the **Choose Files** button
+  - Upload the files unto Colab runtime
+- **Step 3:** Run all the cells to get results
+
+
 
 
 
