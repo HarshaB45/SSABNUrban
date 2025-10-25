@@ -17,7 +17,7 @@ can constitute multiple materials
 
 The mixing model used in this paper was the **Linear Mixing Model**, which can be represented as 
 
-X = EA + N
+*X = EA + N*
 
 X - Hyperspectral Image
 
