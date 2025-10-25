@@ -46,6 +46,51 @@ The image contains 4 endmembers; Asphalt Road, Roof, Grass, Tree. These endmembe
 ![Diagram](assets/architecture.png)
 
 
+### **1. Input and Unfolding**
+The network takes a **hyperspectral image (HSI)** as input — a 3D cube with spatial and spectral dimensions.  
+The cube is **unfolded** into pixel-wise spectral vectors \( X \), allowing each pixel’s spectral information to be processed individually while retaining overall spatial context.
+
+---
+
+### **2. Encoder**
+The **encoder** extracts both spectral and spatial features through two main branches:
+
+#### 🔹 Spectral Branch
+- **Conv(1×1):** Projects each spectral vector into a latent feature space.  
+- **LeakyReLU:** Adds nonlinearity for complex feature learning.  
+- **Dropout:** Reduces overfitting by randomly dropping connections.  
+- **SCAM (Spectral–Channel Attention Module):** Learns attention across spectral channels, emphasizing important wavelength relationships.  
+- Repeated **Conv–LeakyReLU–Dropout–SCAM** layers capture hierarchical spectral dependencies.
+
+#### 🔹 Spatial Branch
+- **Conv(3×3):** Extracts local spatial context from the HSI cube.  
+- **LeakyReLU + Dropout:** Similar activation and regularization steps.  
+- **STB (Swin Transformer Block):** Uses **window-based multi-head self-attention (W-MSA and SW-MSA)** to model long-range spatial dependencies while maintaining computational efficiency.
+
+The spectral and spatial features are fused to form a **joint latent representation** of the HSI.
+
+---
+
+### **3. Decoder**
+The **decoder** reconstructs the hyperspectral image from the encoded representation:
+
+- **Conv(1×1):** Refines the fused features into abundance estimates.  
+- **ASC + ANC Constraints:**  
+  - **ASC (Abundance Sum-to-One Constraint):** Ensures all abundances per pixel sum to one.  
+  - **ANC (Abundance Non-Negativity Constraint):** Enforces non-negative abundance values.  
+- **Linear Decoder:** Combines the estimated abundance maps and learned endmembers to reconstruct the HSI.
+
+---
+
+### **4. Outputs**
+- **Abundance Maps:** Show the spatial distribution of each material/component.  
+- **Endmembers:** Represent the pure spectral signatures learned by the model.  
+- **Reconstructed HSI:** The final output, approximating the original hyperspectral image.
+
+---
+
+
+
 Presentation - https://docs.google.com/presentation/d/11CiYy9N1HPy-sw6BZI3bKO7vEWBu1FAo/edit?slide=id.p12#slide=id.p12
 # Prerequisites
 ```
