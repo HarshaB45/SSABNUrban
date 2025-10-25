@@ -21,4 +21,6 @@ pip install torch==2.5.1 torchvision==0.20.1 numpy==1.24.0 scipy==1.14.1
 matplotlib==3.6.3
 
 # How to Run
-Upload the datasets to the designated folder and run the script.
+Upload the datasets to the designated folder and run SSABNUrban.ipynb
+
+
