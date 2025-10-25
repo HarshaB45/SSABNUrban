@@ -109,11 +109,11 @@ matplotlib==3.6.3
 # How to Run
 # In order to run this project on Colab:
 
-- **Step 1:** Open an empty colab file
+- **Step 1:** Open the file titles "SSABNUrban.ipynb".
 - **Step 2:** Upload the datasets UrbanR162.mat and groundTruth_4_end.zip one of two ways:
   - Run the first cell, and upload the files using the **Choose Files** button
   - Upload the files unto Colab runtime
-- **Step 3:** Run all the cells to get results
+- **Step 3:** Run all cells 
 
 
 
